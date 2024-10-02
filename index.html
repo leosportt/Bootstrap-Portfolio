@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/code-icon.png" type="image/png">
+  <title>Leo - Home Page</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- FontAwesome & Google Fonts -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-danger fixed-top">
+    <a class="navbar-brand" href="#image-computer"><i class="fas fa-code"></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+     data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#image-photo">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projetos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+  <!-- Seção de Boas-vindas -->
+<section id="welcome-section" class="welcome-section text-center py-5 mt-5" style="background-color: var(--main-gray);">
+    <div class="container mt-5">
+      <div class="computer-legend mt-5 mr-1">
+        <img id="image-computer" class="img-fluid mb-5 mr-5" src="./assets/tela.gif" alt="project" />
+        <span class="computer-text mb-5" style="font-size: 1rem;">print("Hello, World!")</span>
+      </div>
+  
+      <h1 class="welcome-hello mt-5">Olá, eu sou o Leonardo</h1>
+      
+      <div class="typing-container text-custom-red font-italic mb-5">
+        <span id="typing-text"></span>
+      </div>
+  
+      <div class="py-4 mb-5"></div>
+  
+      <div>
+        <img id="image-photo" class="img-fluid rounded-circle mt-5" src="./assets/eu.png" alt="Leonardo" style="max-width: 200px; height: auto;" />
+      </div>
+  
+      <h2 class="welcome-title text-white mt-2">Sobre mim</h2>
+      <p class="welcome-text text-justify text-custom-red">
+        Gosto de ajudar as pessoas a resolverem problemas ligados à <b>tecnologia</b>. 
+        Sempre fui um cara fascinado por computador. Movido por essa <b>paixão</b>, estou hoje 
+        na área de T.I e desenvolvimento. Gosto muito de criar páginas, programas e de mexer no
+         front-end, mas também tenho estudado back-end na faculdade e em bootcamps.<br><br>
+        Atualmente, faço <b>Análise e Desenvolvimento de Sistemas</b> na <b>PUC Minas</b>. Em 
+        paralelo, estudo conteúdo full-stack na plataforma <b>freeCodeCamp</b>. Tenho um perfil 
+        na <a href="https://www.workana.com/freelancer/be83c6385210f6fdfa7abcf023f656f5" 
+        class="btn-workana" target="_blank"><b>Workana</b></a>, que é um site para trabalho
+         freelancer, e busco por oportunidades na área de desenvolvimento front-end. Também 
+         ajudo na escrita de artigos e produção de conteúdo. Para ver meu currículo,
+          <a href="https://drive.google.com/file/d/1p4JCDKK8A0xTvwkjcYGWu8hLtSBfYq-9/view?usp=sharing"
+           class="btn-workana" target="_blank"><b>clique aqui</b></a>.
+      </p>
+    </div>
+  </section>  
+
+  <!-- Seção de Conhecimentos -->
+<section class="container-fluid text-center py-5" style="background-color: var(--main-gray);">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <img class="img-fluid" src="./assets/conhecimentos.png" alt="Conhecimentos" style="max-width: 200px; height: auto;">
+        </div>
+    </div>
+
+    <h2 class="welcome-title mb-4 text-white" style="max-width: 90%; margin: 0 auto;">Conhecimentos</h2> <!-- Ajuste para o título -->
+    
+    <div class="row justify-content-center" style="max-width: 800px; margin: 0 auto;">
+        <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <a class="btn btn-outline-danger w-100"><i class="fab fa-html5"></i> HTML</a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <a class="btn btn-outline-primary w-100"><i class="fab fa-css3-alt"></i> CSS</a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <a class="btn btn-outline-warning w-100"><i class="fab fa-js"></i> JavaScript</a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <a class="btn btn-outline-orange w-100"><i class="fab fa-figma"></i> Figma</a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <a class="btn btn-outline-primary w-100"><i class="fab fa-bootstrap"></i> Bootstrap</a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <a class="btn btn-outline-info w-100"><i class="fab fa-react"></i> React</a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <a class="btn btn-outline-danger w-100"><i class="fab fa-sass"></i> SASS</a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <a class="btn btn-outline-light w-100"><i class="fab fa-github"></i> GitHub</a> <!-- Botão do GitHub -->
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <a class="btn btn-outline-orange w-100"><i class="fab fa-git"></i> Git</a> <!-- Botão do Git -->
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 mb-3">
+            <a class="btn btn-outline-success w-100"><i class="fab fa-node"></i> Node.js</a> <!-- Botão do Node.js -->
+        </div>
+    </div>
+</section>
+
+<!-- Seção de Certificações -->
+<section class="container-fluid text-center py-5" style="background-color: var(--main-gray);">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <img class="img-fluid" src="./assets/certificacoes.png" alt="Certificações" style="max-width: 200px; height: auto;">
+        </div>
+    </div>
+
+    <h2 class="welcome-title-3 mb-4 text-white" style="max-width: 90%; margin: 0 auto;">Certificações</h2> <!-- Ajuste para o título -->
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <p class="text-justify text-white mb-5">
+                • <a href="https://www.freecodecamp.org/portuguese/certification/leosport/full-stack" 
+                class="btn-workana text-custom-red"><em>Legacy Full Stack Certification</em>, <b>freeCodeCamp</b></a>.
+                <br>• <b>Tecnologias:</b> HTML, CSS, JavaScript, Bootstrap, React, Node.js, MongoDB, SAAS.<br><br>
+                
+                • <a href="https://drive.google.com/file/d/1VSAebEm6bvnlz7VXqlYcJXz6axbM7pNx/view?usp=sharing"
+                class="btn-workana text-custom-red"><em>Certificado de Qualificação Profissional de Nível Tecnológico
+                em Desenvolvedor de Software</em>, <b>PUC Minas</b></a>.
+                <br>• <b>Tecnologias:</b> HTML, CSS, JavaScript, Bootstrap, React Native, Windows.<br><br>
+                
+                • <a href="https://drive.google.com/file/d/1mTS6pagz-Kd54S8C632LEL-S_dy3M0mt/view?usp=sharing" 
+                class="btn-workana text-custom-red"><em>Certificado Profissional de Suporte em TI do Google</em>, <b>Coursera</b></a>.
+                <br>• <b>Tecnologias:</b> Windows, Linux.<br><br>
+                
+                • <a href="https://drive.google.com/file/d/10fSuzmIcwn9P47lCY6Wnep5Qk3mRcpWb/view?usp=sharing"
+                class="btn-workana text-custom-red"><em>Code Foundations Skill Path</em>, <b>Codecademy</b></a>.
+                <br>• <b>Tecnologias:</b> HTML, CSS, JavaScript.<br><br>
+                
+                • <a class="btn-workana text-custom-red"><em>Graduação em Análise e Desenvolvimento de Sistemas</em>, 
+                <b>PUC Minas</b></a>.
+                <a><i class="fas fa-spinner"></i></a>
+            </p>
+        </div>
+    </div>
+</section> 
+
+  <!-- Seção de Projetos -->
+<section id="projects" class="projects-section" style="background-color: var(--main-blue); padding-top: 5%; padding-bottom: 5%;">
+    <div class="container">
+        <h2 class="projects-section-header text-white text-center mb-5">Alguns projetos que fiz</h2>
+
+        <div class="row">
+            <!-- Projeto 1 -->
+            <div class="col-6 col-md-6 col-lg-4 mb-4">
+                <a href="https://codepen.io/leosport/full/GRbQJdM" target="_blank" class="project text-center d-block project-box">
+                    <img class="img-fluid project-image fixed-size" src="./assets/pagina-de-homenagem.png" alt="Página de Homenagem">
+                    <p class="project-title mt-2">
+                        <span class="code">&lt;</span> Página de Homenagem <span class="code">&#47;&gt;</span>
+                        <br><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i>
+                    </p>
+                </a>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="col-6 col-md-6 col-lg-4 mb-4">
+                <a href="https://landing-page-sigma-topaz-12.vercel.app/" target="_blank" class="project text-center d-block project-box">
+                    <img class="img-fluid project-image fixed-size" src="./assets/landing-page.png" alt="Landing Page">
+                    <p class="project-title mt-2">
+                        <span class="code">&lt;</span> Landing Page <span class="code">&#47;&gt;</span>
+                        <br><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i>
+                    </p>
+                </a>
+            </div>
+            <!-- Projeto 3 -->
+            <div class="col-6 col-md-6 col-lg-4 mb-4">
+                <a href="https://p-gina-e-sports.vercel.app/" target="_blank" class="project text-center d-block project-box">
+                    <img class="img-fluid project-image fixed-size" src="./assets/bootstrap-esports-page.png" alt="Bootstrap e-Sports Page">
+                    <p class="project-title mt-2">
+                        <span class="code">&lt;</span> Bootstrap e-Sports Page <span class="code">&#47;&gt;</span>
+                        <br><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-bootstrap"></i>
+                    </p>
+                </a>
+            </div>
+            <!-- Projeto 4 -->
+            <div class="col-6 col-md-6 col-lg-4 mb-4">
+                <a href="https://codepen.io/leosport/full/abgqOGO" target="_blank" class="project text-center d-block project-box">
+                    <img class="img-fluid project-image fixed-size" src="./assets/formulario-de-pesquisa.png" alt="Formulário de Pesquisa">
+                    <p class="project-title mt-2">
+                        <span class="code">&lt;</span> Formulário de Pesquisa <span class="code">&#47;&gt;</span>
+                        <br><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i>
+                    </p>
+                </a>
+            </div>
+            <!-- Projeto 5 -->
+            <div class="col-6 col-md-6 col-lg-4 mb-4">
+                <a href="https://react-linktree-clone.vercel.app/" target="_blank" class="project text-center d-block project-box">
+                    <img class="img-fluid project-image fixed-size" src="./assets/react-linktree.png" alt="React Linktree Clone">
+                    <p class="project-title mt-2">
+                        <span class="code">&lt;</span> React Linktree Clone <span class="code">&#47;&gt;</span>
+                        <br><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-react"></i>
+                    </p>
+                </a>
+            </div>
+            <!-- Projeto 6 -->
+            <div class="col-6 col-md-6 col-lg-4 mb-4">
+                <a href="https://codepen.io/leosport/full/VwJQLEp" target="_blank" class="project text-center d-block project-box">
+                    <img class="img-fluid project-image fixed-size" src="./assets/jogo-da-velha.png" alt="Jogo da Velha">
+                    <p class="project-title mt-2">
+                        <span class="code">&lt;</span> Jogo da Velha <span class="code">&#47;&gt;</span>
+                        <br><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js"></i>
+                    </p>
+                </a>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="https://codepen.io/leosport/" class="btn btn-outline-light" target="_blank">Mais projetos no CodePen <i class="fas fa-chevron-right"></i></a>
+            <a href="https://github.com/leosportt?tab=repositories" class="btn btn-outline-light ml-3" target="_blank">Mais projetos no GitHub <i class="fas fa-chevron-right"></i></a>
+        </div>
+    </div>
+</section>   
+
+  <!-- Seção de Contato -->
+<section id="contact" class="contact-section bg-dark text-white py-5">
+    <div class="container text-center mt-5">
+      <h2 class="mb-4">Vamos trabalhar juntos!</h2>
+      <p class="font-italic">Aqui estão os meus contatos</p>
+      
+      <div class="d-flex justify-content-center flex-wrap mt-4 mb-5">
+        <a href="https://www.linkedin.com/in/leonardo-igor-5665b7209/" target="_blank" class="btn btn-light m-2"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a id="profile-link" href="https://github.com/leosportt" target="_blank" class="btn btn-light m-2"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.instagram.com/leo_homepage/" target="_blank" class="btn btn-light m-2"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="mailto:leonardo.igoraraujo@hotmail.com" class="btn btn-light m-2"><i class="fas fa-at"></i> E-mail</a>
+        <a href="https://wa.me/5531998728797?text=Leonardo%20-%20Analista%20de%20Sistemas%20-%20Desenvolvedor"
+         class="btn btn-light m-2"><i class="fas fa-mobile-alt"></i> Telefone</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="bg-secondary text-center py-4">
+    <a href="#image-computer" class="text-white">
+      <i class="fas fa-code fa-2x"></i>
+    </a>
+    <p class="mt-2 text-white">&copy; 2024 Leonardo Igor</p>
+  </footer>
+  
+  <!-- Chatbot -->
+<div id="chatbot" class="d-flex flex-column">
+    <div id="chatbot-header" class="d-flex align-items-center p-2" onclick="toggleChatbot()">
+      <img src="./assets/eu.png" alt="Avatar" class="rounded-circle" style="width: 40px; height: 40px;"> <!-- Avatar -->
+      <span class="ml-2">Chatbot</span>
+      <div id="chatbot-toggle-icon" class="ml-auto">
+        <i class="fas fa-chevron-down"></i> <!-- Use um ícone de seta para baixo -->
+      </div>
+    </div>
+    <div id="chatbot-body" class="flex-grow-1 overflow-auto" style="display: none;"> <!-- Inicialmente oculto -->
+      <div id="chatbot-messages"></div>
+      <div id="chatbot-input-container" class="input-group">
+        <input id="chatbot-input" type="text" class="form-control" placeholder="Digite uma mensagem..." aria-label="User input">
+        <div class="input-group-append">
+          <button id="chatbot-send" class="btn btn-danger" type="button">
+            <!-- Ícone de enviar -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20">
+              <path d="M16.1 260.2c-22.6 12.9-20.5 47.3 3.6 57.3L160 376l0 103.3c0 18.1 14.6 32.7 32.7 32.7c9.7 0 18.9-4.3 25.1-11.8l62-74.3 123.9 51.6c18.9 7.9 40.8-4.5 43.9-24.7l64-416c1.9-12.1-3.4-24.3-13.5-31.2s-23.3-7.5-34-1.4l-448 256zm52.1 25.5L409.7 90.6 190.1 336l1.2 1L68.2 285.7zM403.3 425.4L236.7 355.9 450.8 116.6 403.3 425.4z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>  
+  
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script> <!-- Popper.js -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap JS -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="script.js"></script> <!-- Seu script personalizado -->
+  
+
+</html>

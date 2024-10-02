@@ -1,0 +1,442 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+  }
+
+  html, body {
+    width: 100%; /* Ocupa toda a largura da tela */
+    overflow-x: hidden; /* Impede rolagem horizontal */
+}
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
+  }
+  
+  h1, h2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+  }
+  
+  h1 {
+    font-size: 4rem;
+  }
+  
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+       font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  .navbar {
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 15px; /* Aumenta o espaço ao redor dos links */
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center; /* Centraliza os links no navbar colapsado */
+        width: 100%; /* Ocupa toda a largura disponível */
+    }
+
+    .navbar-nav .nav-item {
+        margin: 5px 0; /* Espaço entre os itens do navbar */
+    }
+}
+  
+  /* Seção de Boas-Vindas */
+  .computer-legend {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .computer-legend .computer-text {
+    visibility: hidden;
+    width: 50%;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+    left: 30%;
+    bottom: 65%;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .computer-legend:hover .computer-text {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* Seção de Conhecimentos */
+  .know-links .btn {
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .know-links .btn:hover {
+    transform: scale(1.05);
+  }
+
+  .btn-outline-purple {
+    color: #6f42c1; /* Cor roxa do Bootstrap */
+    border-color: #6f42c1; /* Cor da borda */
+  }
+  
+  .btn-outline-purple:hover {
+    background-color: #6f42c1; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+  }  
+
+  .btn-outline-orange {
+    color: #ff5722; /* Cor laranja */
+    border-color: #ff5722; /* Cor da borda laranja */
+}
+
+  .btn-outline-orange:hover {
+    background-color: #ff5722; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}
+
+  
+  /* Seção de Certificações */
+  .welcome-text a {
+    color: var(--main-red);
+    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .welcome-text a:hover {
+    color: #ff7f50;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+  }
+
+  .text-custom-red {
+    color: var(--main-red); /* Cor desejada para os textos dos links */
+}
+  
+  /* Seção de Projetos */
+  .projects-section {
+    background-color: var(--main-blue);
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  
+  .project {
+    background: var(--main-gray);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .project:hover {
+    transform: scale(1.05);
+    background-color: #383838;
+  }
+  
+  .project-image {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .project-title {
+    font-size: 1rem;
+    padding-top: 1rem;
+    line-height: 1.5; /* Melhor espaçamento entre linhas */
+  }
+
+  /* Ajustes para tamanhos de tela menores */
+@media (max-width: 768px) {
+    .project-title {
+        font-size: 0.9rem; /* Tamanho reduzido em telas menores */
+    }
+}
+
+@media (max-width: 576px) {
+    .project-title {
+        font-size: 0.8rem; /* Tamanho ainda menor em telas extra pequenas */
+    }
+}
+  
+  .project .code {
+    color: var(--main-red);
+  }
+  
+  .project .code:hover {
+    color: #ff7f50;
+  }
+  
+  .btn-show-all {
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-show-all:hover {
+    background-color: var(--main-red);
+  }
+
+  .project-box {
+    height: 300px; /* Altura fixa para todas as caixas de projeto */
+    display: flex; /* Usado para centralizar conteúdo */
+    flex-direction: column; /* Permite que o conteúdo fique na vertical */
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    text-align: center; /* Centraliza o texto */
+    border: 1px solid #ccc; /* Opcional: borda para as caixas */
+    background-color: var(--main-gray); /* Opcional: cor de fundo para as caixas */
+    border-radius: 8px; /* Bordas arredondadas */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse a altura */
+}
+
+.fixed-size {
+    width: 100%; /* Largura da imagem ocupando 100% do contêiner */
+    height: 65%; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Assegura que a imagem mantenha suas proporções e não seja cortada */
+    border-radius: 8px; /* Bordas arredondadas para as imagens */
+}
+  
+  /* Seção de Contatos */
+  .contact-section {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background: var(--main-gray);
+  }
+  
+  .contact-details {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .contact-details:hover {
+    transform: translateY(-5px);
+  }
+  
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Footer */
+  footer {
+    background: var(--main-gray);
+    border-top: 4px solid var(--main-red);
+    padding: 2rem;
+  }
+  
+  footer p {
+    margin: 0;
+    color: var(--main-white);
+    font-size: 1.4rem;
+  }
+  
+  footer a {
+    color: var(--main-white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #ff7f50;
+  }
+  
+  /* Estilo para o chatbot */
+#chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    width: 400px; /* Largura padrão */
+    max-height: 500px; /* Altura máxima */
+    background: #303841; /* Cor de fundo */
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Garantir que o chatbot fique sobre outros elementos */
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease; /* Transição suave */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    #chatbot {
+      width: 80%; /* Aumentar a largura em dispositivos menores */
+      max-width: 250px; /* Largura máxima em dispositivos menores */
+      bottom: 10px; /* Ajustar a posição */
+    }
+  }
+  
+  /* Estilo para o cabeçalho do chatbot */
+  #chatbot-header {
+    display: flex;
+    align-items: center;
+    background: #be3144; /* Cor de fundo do cabeçalho */
+    color: #ffffff;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para o corpo do chatbot */
+  #chatbot-body {
+    flex-grow: 1; /* Permitir que o corpo ocupe o espaço restante */
+    overflow-y: auto; /* Permitir rolagem no corpo */
+    padding: 8px;
+    display: flex;
+    flex-direction: column; /* Orientação vertical */
+  }
+  
+  /* Estilo para a área de mensagens */
+  #chatbot-messages {
+    flex: 1; /* Ocupa o espaço restante */
+    display: flex;
+    flex-direction: column; /* Orientação vertical */
+    gap: 10px; /* Espaço entre as mensagens */
+    overflow-y: auto; /* Permitir rolagem no corpo */
+  }
+  
+  /* Estilo para as mensagens */
+  .message {
+    padding: 6px; /* Espaçamento interno reduzido */
+    border-radius: 8px; /* Bordas arredondadas */
+    max-width: 80%; /* Largura máxima da mensagem */
+    word-wrap: break-word; /* Quebra de linha */
+    font-size: 15px; /* Tamanho da fonte das mensagens */
+  }
+  
+  /* Mensagem do usuário */
+  .user-message {
+    background: #007bff; /* Cor de fundo da mensagem do usuário */
+    color: #ffffff; /* Cor do texto da mensagem do usuário */
+    align-self: flex-end; /* Alinha à direita */
+  }
+  
+  /* Mensagem do bot */
+  .bot-message {
+    background: #ffffff; /* Cor de fundo da mensagem do bot */
+    color: #000000; /* Cor do texto da mensagem do bot */
+    align-self: flex-start; /* Alinha à esquerda */
+  }
+
+  /* Estilo para os botões de opção no chatbot */
+.option-button {
+    background: #be3144; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 8px; /* Espaçamento interno */
+    cursor: pointer; /* Mão ao passar o mouse */
+    display: flex; /* Flexbox para alinhar o conteúdo */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    width: 100%; /* Largura completa */
+    text-align: center; /* Centraliza o texto */
+    font-size: 14px; /* Tamanho da fonte */
+  }
+  
+  /* Efeito ao passar o mouse sobre o botão */
+  .option-button:hover {
+    background: #a02029; /* Cor do fundo ao passar o mouse (sombreamento) */
+  }
+  
+  
+  /* Estilo para a barra de entrada */
+  #chatbot-input-container {
+    border-top: 1px solid #ccc; /* Borda superior */
+    background: #ffffff; /* Cor de fundo da barra de entrada */
+    padding: 5px;
+    display: flex; /* Flexbox para o campo de input e botão */
+  }
+  
+  /* Estilo para o campo de input */
+  #chatbot-input {
+    border: 1px solid #ccc; /* Borda do campo de input */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 5px; /* Espaçamento interno reduzido */
+    font-size: 14px; /* Tamanho da fonte do input */
+  }
+  
+  /* Estilo para o botão de envio */
+  #chatbot-send {
+    background: #be3144; /* Cor de fundo do botão */
+    color: #ffffff; /* Cor do texto do botão */
+    border: none; /* Sem borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    cursor: pointer; /* Mão ao passar o mouse */
+    display: flex; /* Flexbox para alinhar o conteúdo */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    width: 40px; /* Largura do botão */
+    height: 35px; /* Altura do botão */
+  }
+  
+  /* Estilo para o indicador de digitação */
+  .typing-indicator {
+    display: inline-flex; /* Alinhamento em linha */
+    align-items: center; /* Centraliza verticalmente */
+    font-size: 10px; /* Tamanho da fonte */
+    color: #888; /* Cor do texto */
+  }
+  
+  .typing-indicator span {
+    display: block; /* Cada ponto em bloco */
+    width: 8px; /* Largura do ponto */
+    height: 8px; /* Altura do ponto */
+    margin: 0 4px; /* Margem entre os pontos */
+    border-radius: 50%; /* Borda arredondada */
+    background-color: #888; /* Cor do ponto */
+    animation: bounce 3s ease-in-out infinite; /* Animação */
+  }
+  
+  .typing-indicator span:nth-child(1) {
+    animation-delay: 0s; /* Delay do primeiro ponto */
+  }
+  
+  .typing-indicator span:nth-child(2) {
+    animation-delay: 0.3s; /* Delay do segundo ponto */
+  }
+  
+  .typing-indicator span:nth-child(3) {
+    animation-delay: 0.6s; /* Delay do terceiro ponto */
+  }
+  
+  /* Animação de bounce */
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+      opacity: 1; /* Opacidade total */
+    }
+    50% {
+      transform: translateY(-8px); /* Movimento para cima */
+      opacity: 0.5; /* Opacidade reduzida */
+    }
+  }
+  
+  
+  
+  
